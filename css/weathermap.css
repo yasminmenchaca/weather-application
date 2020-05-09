@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
+
+body {
+    background-color: #6B0504;
+    font-family: 'Lato', sans-serif;
+}
+
+.card-title {
+    font-family: 'Roboto', sans-serif;
+}
+
+#map {
+    width: 100%;
+    height: 50em;
+    margin-top: 1em;
+}
+
+.coordinates {
+    visibility: hidden;
+}
+
+.cards-cont {
+    margin-top: .5em;
+}
+
+.card-deck {
+    margin-bottom: .5em;
+}
+
+#submit {
+    color: white;
+}
+
+#header {
+    color: #EFE8D7;
+}
+
+#location-id {
+    color: #EFE8D7;
+}
+
+.card-body, .card {
+    background-color: #EFE8D7;
+}
