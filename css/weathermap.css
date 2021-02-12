@@ -1,44 +1,76 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap");
 
 body {
-    background-color: #6B0504;
-    font-family: 'Lato', sans-serif;
+  /* background-color: #6b0504; */
+  font-family: "Lato", sans-serif;
+  /* margin: 0; */
+  /* padding: 0; */
 }
 
-.card-title {
-    font-family: 'Roboto', sans-serif;
+.day {
+  width: 18%;
+}
+
+.date {
+  font-size: 12px;
+  padding: 4px 0;
+}
+
+#brand {
+  font-size: 24px;
+}
+
+#citySubmit:hover {
+  background-color: #0067c3;
+}
+
+#citySubmit:active {
+  background-color: #032e58;
+  color: gray;
+}
+
+#main-header {
+  background-color: dodgerblue;
+  color: floralwhite;
+  height: 60px;
+  margin: 0;
+}
+
+.description {
+  font-size: 12px;
+}
+
+.humidity,
+.pressure,
+.wind {
+  font-size: 14px;
+}
+
+hr {
+  margin: 8px 0;
+}
+
+/* .card-body {
+  padding: 1.5em;
+  border: 1px dotted black;
+  border-radius: 3px;
+} */
+
+/* .card-body:hover {
+  background: deepskyblue;
+  color: white;
+} */
+
+.day {
+  width: 100%;
 }
 
 #map {
-    width: 100%;
-    height: 50em;
-    margin-top: 1em;
+  width: 100%;
+  height: 50em;
+  margin-top: 1em;
 }
 
-.coordinates {
-    visibility: hidden;
-}
-
-.cards-cont {
-    margin-top: .5em;
-}
-
-.card-deck {
-    margin-bottom: .5em;
-}
-
-#submit {
-    color: white;
-}
-
-#header {
-    color: #EFE8D7;
-}
-
-#location-id {
-    color: #EFE8D7;
-}
-
-.card-body, .card {
-    background-color: #EFE8D7;
+#container-main {
+  margin-top: 10px;
 }
