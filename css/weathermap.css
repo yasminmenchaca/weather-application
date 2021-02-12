@@ -1,68 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap");
 
 body {
-  /* background-color: #6b0504; */
+  background-color: #6b0504;
   font-family: "Lato", sans-serif;
-  /* margin: 0; */
-  /* padding: 0; */
-}
-
-.day {
-  width: 18%;
-}
-
-.date {
-  font-size: 12px;
-  padding: 4px 0;
-}
-
-#brand {
-  font-size: 24px;
-}
-
-#citySubmit:hover {
-  background-color: #0067c3;
-}
-
-#citySubmit:active {
-  background-color: #032e58;
-  color: gray;
-}
-
-#main-header {
-  background-color: dodgerblue;
-  color: floralwhite;
-  height: 60px;
-  margin: 0;
 }
 
 .description {
   font-size: 12px;
+  text-align: center;
+  text-transform: capitalize;
 }
 
-.humidity,
-.pressure,
-.wind {
-  font-size: 14px;
+.card {
+  font-size: 16px;
+  text-align: center;
 }
 
 hr {
-  margin: 8px 0;
-}
-
-/* .card-body {
-  padding: 1.5em;
-  border: 1px dotted black;
-  border-radius: 3px;
-} */
-
-/* .card-body:hover {
-  background: deepskyblue;
-  color: white;
-} */
-
-.day {
-  width: 100%;
+  /* margin: 8px 0; */
 }
 
 #map {
@@ -72,5 +27,5 @@ hr {
 }
 
 #container-main {
-  margin-top: 10px;
+  margin-top: 1em;
 }

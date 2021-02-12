@@ -55,21 +55,21 @@
   }
   ////////////////////////////////////
   function createDayCard(day) {
-    var date = day.dt_txt;
-    var maxTemp = day.main.temp_max.toString();
-    var minTemp = day.main.temp_min.toString();
+    var date = day.dt_txt.slice(0, 10);
+    var maxTemp = day.main.temp_max.toFixed();
+    var minTemp = day.main.temp_min.toFixed();
     var icon = day.weather[0].icon;
     var description = day.weather[0].description;
     var humidity = day.main.humidity;
-    var wind = day.wind.speed;
+    var wind = day.wind.speed.toFixed();
     var pressure = day.main.pressure;
     var card = document.createElement("div");
 
-    $(card).addClass("day card").html($("#template").html());
+    $(card).addClass("day card-body").html($("#template").html());
 
-    $(card)
-      .find(".temperature")
-      .text("Low " + minTemp + " °F - High " + maxTemp + " °F");
+    $(card).find(".temperatureHigh").text(`High: ${maxTemp}°F`);
+    $(card).find(".temperatureLow").text(`Low: ${minTemp}°F`);
+
     $(card).find(".date").text(date);
     $(card)
       .find(".icon")
@@ -83,7 +83,7 @@
 
     $(card)
       .find(".wind")
-      .html("<strong>Wind: </strong>" + wind + " mph");
+      .html("<strong>Wind: </strong>" + wind + " MPH");
 
     $(card)
       .find(".pressure")
