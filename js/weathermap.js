@@ -21,7 +21,7 @@
   ////////////////////////////////////
 
   function getWeatherData(lng, lat) {
-    $.get("http://api.openweathermap.org/data/2.5/forecast", {
+    $.get("https://api.openweathermap.org/data/2.5/forecast", {
       APPID: OPW_API,
       lon: lng,
       lat: lat,
@@ -73,7 +73,7 @@
     $(card).find(".date").text(date);
     $(card)
       .find(".icon")
-      .html("<img src='http://openweathermap.org/img/w/" + icon + ".png'>");
+      .html("<img src='https://openweathermap.org/img/w/" + icon + ".png'>");
 
     $(card).find(".description").html(description);
 
